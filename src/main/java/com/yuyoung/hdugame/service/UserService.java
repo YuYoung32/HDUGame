@@ -29,7 +29,6 @@ public class UserService {
         //4个不重复的随机数的数组
         List<Integer> idNum = new ArrayList<>();
 
-        System.out.println("之前"+idNum.size());
         Random r = new Random();
         int id = r.nextInt(totalNum) + 1;
         while (idNum.size()<choicesNum){
@@ -40,11 +39,8 @@ public class UserService {
                 System.out.println("当前"+idNum.size());
             }
         }
-
         //idNum数组是1--数据库最大id值之间的4个
-        System.out.println("idNUm 共"+idNum.size());
-        System.out.println("\n");
-        System.out.println(idNum);
+
         for (int index = 0; index < choicesNum; index++) {
             //获取第index个随机id,共4个
             id = idNum.get(index);
