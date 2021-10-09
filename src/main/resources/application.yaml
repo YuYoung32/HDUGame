@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: XXX
+  aop:
+    proxy-target-class: true
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    mode: LEGACYHTML5
+  datasource:
+    url: jdbc:sqlite:data/userData.db
+    driverClassName: org.sqlite.JDBC
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+

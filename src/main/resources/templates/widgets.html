@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="shortcut icon" href="#" type="image/png">
+
+    <title>游戏</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.theme.css" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="sticky-header">
+
+<section>
+
+    <!-- main content start-->
+    <div class="main-content">
+        <!--body wrapper start-->
+        <div class="wrapper widgets">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel widget-info-twt blue-box">
+                                <div class="avatar"><img th:src="${picUrl}"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="panel">
+                                <ul class="iconic-list">
+                                    <li>
+                                        <a href="#">
+                                            <h4 th:text="${AChoice}">A</h4>
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">
+                                            <h4 th:text="${BChoice}">B</h4>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h4 th:text="${CChoice}">C</h4>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h4 th:text="${DChoice}">D</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!--body wrapper end-->
+
+        <!--footer section start-->
+        <!--<footer class="sticky-footer">-->
+        <!--2014 &copy; AdminEx by ThemeBucket-->
+        <!--</footer>-->
+        <!--footer section end-->
+
+
+    </div>
+    <!-- main content end-->
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+
+<!--common scripts for all pages-->
+<script src="js/scripts.js"></script>
+
+<script>
+
+
+    $(document).ready(function () {
+
+        $("#slide-img").owlCarousel({
+
+            navigation: true, // Show next and prev buttons
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true,
+            autoPlay: true
+
+            // "singleItem:true" is a shortcut for:
+            // items : 1,
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+
+        });
+
+    });
+
+
+</script>
+
+</body>
+</html>
