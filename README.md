@@ -21,3 +21,11 @@ HduIceBreak
   C-->D[controller]
   D-->|Thymeleaf|E[HTML]
   ```
+
+* 数据流
+  本地数据库sqlite，存放字段：userId、userName、userPicUrl。
+
+  userId作为主键是唯一标识，在整个软件中得以贯穿。
+
+  userPicUrl是用户图片的地址，本测试数据采用图床形式，将图片上传至图床然后调用。
+
