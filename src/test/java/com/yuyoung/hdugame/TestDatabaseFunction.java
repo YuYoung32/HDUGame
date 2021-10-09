@@ -24,7 +24,7 @@ public class TestDatabaseFunction {
     @Test
     public void testSelectOne(){
         String id = "1";
-        System.out.println(userDaoImpl.selectOne(id));
+        System.out.println(userDaoImpl.selectOneById(id));
     }
 
 }

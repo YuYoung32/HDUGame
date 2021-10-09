@@ -26,7 +26,7 @@ public class UserDaoImpl implements UserDao{
     }
 
     @Override
-    public UserInfo selectOne(String id) {
+    public UserInfo selectOneById(String id) {
         String sql = "SELECT * FROM userData  WHERE userId=?";
         UserInfo userInfo = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<UserInfo>(UserInfo.class), id);
         return userInfo;

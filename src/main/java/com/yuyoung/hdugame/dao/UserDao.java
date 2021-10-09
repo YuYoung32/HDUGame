@@ -17,5 +17,6 @@ public interface UserDao {
      * @param id String id
      * @return 一个用户信息对象
      */
-    public UserInfo selectOne(String id);
+    public UserInfo selectOneById(String id);
+
 }
